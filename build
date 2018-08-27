@@ -1,0 +1,19 @@
+#!/bin/bash
+
+export PLUGIN_ID=aero.alibaba.mattermost-plugin-rtl
+
+rm -rf dist
+
+yarn build
+
+mkdir -p dist/$PLUGIN_ID/dist
+
+mv dist/main.js dist/$PLUGIN_ID/dist
+
+cp plugin.json dist/$PLUGIN_ID
+
+pushd dist && tar -cvzf $PLUGIN_ID.tar.gz $PLUGIN_ID && popd
+
+rm -r dist/$PLUGIN_ID
+
+echo plugin built at: dist/$PLUGIN_ID.tar.gz

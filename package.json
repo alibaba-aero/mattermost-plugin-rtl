@@ -1,0 +1,19 @@
+{
+  "name": "mattermost-plugin-rtl",
+  "version": "0.0.1",
+  "description": "This plugin adds RTL support to the mattermost webapp",
+  "scripts": {
+    "build": "bili --format umd --filename main.js",
+    "dev": "yarn build --watch"
+  },
+  "dependencies": {
+    "bili": "^3.1.2",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+        "eslint": "^5.1.0",
+        "eslint-config-airbnb-base": "^13.0.0",
+        "eslint-plugin-import": "^2.11.0",
+        "eslint-plugin-jest": "^21.17.0"
+  }
+}

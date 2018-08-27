@@ -1,0 +1,14 @@
+{
+    "id": "aero.alibaba.mattermost-plugin-rtl",
+    "name": "Mattermost RTL Plugin",
+    "description": "This plugin adds RTL support to the mattermost webapp",
+    "version": "0.0.1",
+    "webapp": {
+        "bundle_path": "dist/main.js"
+    },
+    "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+    }
+}
